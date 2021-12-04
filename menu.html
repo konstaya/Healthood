@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+	 <head>
+	<title>Меню</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<div class="wrapper">
+			<header class = "header">
+	<div class="header__wrapper">
+		<div class="header__container _container" >
+			<div class="header__body">
+				<div class="header__main">
+					<a href="index.html" class="header__logo"><H1>HEALTHOOD</H1></a>
+					<div class="header__menu menu">
+						
+						<nav class="menu__body">
+							<ul data-spollers="768,max" class="menu__list">
+								<li class="menu__item">
+									<a href="index.html" class="menu__link">главная</a>
+								</li>
+								<li class="menu__item">
+									<a href="menu.html" class="menu__link">меню</a>
+								</li>
+								<li class="menu__item">
+									<a href="delivery.html" class="menu__link">доставка</a>
+								</li>
+								<li class="menu__item">
+									<a href="info.html" class="menu__link">о компании</a>
+									<button data-spoller type="button" class = "menu__arrow _icon-arrow-down"></button>
+									<ul class="menu__sub-list">
+										<li class="menu__sub-item">
+											<a href="info.html" class="menu__sub-link">информация</a>
+										</li>
+										<li class="menu__sub-item">
+											<a href="faq.html" class="menu__sub-link">FAQ</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				
+				</div>
+				<div class="header__actions actions-header">
+					<a href="lk.html" class="actions-header__item actions-header__item_user _icon-profile"></a>
+					
+					<a href="" class  = "actions-header__item actions-header__item_phone _icon-phone"></a>
+					
+					<span class="actions-header__item actions-header__item_city">Челябинск</span>
+				</div>
+				<button type = "button" class="icon-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</header>
+			<main class="page ">
+				<div class="page__container _container" >
+                    <aside class="page__side">
+                        <div class="filter">
+
+                            <div class="filter__title"></div>
+                            <button type="button" class="icon-filters _icon-arrow-down" type="button">
+                            <span>фильтры:</span>  
+                            </button>
+                            
+                            <div class="filter__body">
+                                <ul class="filter__section-list">
+                                    <il class="section-filter__section">
+                                        <div class="section-filter__body">
+                                            
+                                            <div class="slidecontainer">
+                                                <div class="section-filter__title"></div>
+                                                <p class="section-filter__title">Количество дней: <span id="demo"></span></p>
+                                                <input type="range" min="1" max="14" value="1" class="slider" id="myRange">
+                                                
+                                              </div>
+                                        </div>
+                                    </il>
+                                    <il class="section-filter__section">
+                                        <div class="section-filter__title">Тип:</div>
+                                        <div class="section-filter__body"> 
+                                            <button class = "section-filter__button" id="diet_type"><p class = "section-filter__button-t">стандартное</p></button>
+                                            <button class = "section-filter__button" id="diet_type"><p class = "section-filter__button-t">вегатерианское</p></button>
+                                        </div>
+                                    </il>
+                                    <il class="section-filter__section">
+                                        <div class="section-filter__title">Рацион:</div>
+                                        <div class="section-filter__body"> 
+                                            <button class = "section-filter__button" id="diet_ccal"><p class = "section-filter__button-t">для похудения (~1400 ккал)</p></button>
+                                            <button class = "section-filter__button" id="diet_ccal"><p class = "section-filter__button-t">сбалансированный (~1800 ккал)</p></button>
+                                            <button class = "section-filter__button"id="diet_ccal"><p class = "section-filter__button-t">для набора массы (~2100 ккал)</p></button>
+                                        </div>
+                                    </il>
+                                    <il class="section-filter__section">
+                                        <button data-spoller type="button" class = "section-filter__section-with-sublist">
+                                            <div class="section-filter__title">Исключить продукты:</div>
+                                            <div class="section-filter__arrow _icon-arrow-down"></div>
+                                        </button>
+                                        <ul class="section-filter__sublist">
+                                            <li class="section-filter__sub-item">молочные продукты</li>
+                                            <li class="section-filter__sub-item">цитрусовые</li>
+                                            <li class="section-filter__sub-item">орехи</li>
+                                        </ul>
+                                    </il>
+                                </ul>
+   
+                            </div>
+                                                     
+                        </div>
+                    </aside>
+                    <div class="page__content">
+                        <div class="content__title">
+                            <span>Выбери своё меню</span>
+                            <button class="filter__button-order"><a href="order_step1.html" class="filter__button-text" >Заказать</a></button>
+                        </div>
+                        <div class="content__list">
+                            <div class="content__item">
+                                <div class="content-item__title">ЗАВТРАК</div>
+                                
+                                <img class = "im-snack"src="./img/breakfast.png" alt="123">
+                                <div class="content-item__container">
+                                    <div class="content-item__text">Лёгкий йогурт с фруктами и ягодами.</div>
+                                    <div class="content-item__text">КБЖУ: 365, 14, 20, 52</div>
+                                </div>
+                                
+                            </div>
+                            <div class="content__item">
+                                <div class="content-item__title">ОБЕД</div>
+                                <img class = "im-snack"src="./img/lunch.png" alt="">
+                                <div class="content-item__container">
+                                    <div class="content-item__text"> Запечёный лосось с овощами и кускусом.</div>
+                                    <div class="content-item__text">КБЖУ: 520, 43, 56, 20</div>
+                                </div>
+                               
+                            </div>
+                            <div class="content__item">
+                                <div class="content-item__title">УЖИН</div>
+                                <img class = "im-snack" src="./img/dinner.png" alt="">
+                                <div class="content-item__container">
+                                    <div class="content-item__text"> Запечёная курица с овощами, апельсинами и зеленью.</div>
+                                    <div class="content-item__text">КБЖУ: 375, 34, 29, 41</div>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <div class="content-item__title">ПЕРЕКУС 1</div>
+                                <img class = "im-snack" src="./img/snack1.png" alt="" >
+                                <div class="content-item__container">
+                                    <div class="content-item__text"> Вкусный ананасовый смузи.</div>
+                                    <div class="content-item__text">КБЖУ: 240, 0, 10, 56</div>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <div class="content-item__title">ПЕРЕКУС 2</div>
+                                <img class = "im-snack" src="./img/snack2.png" alt="" >
+                                <div class="content-item__container">
+                                    <div class="content-item__text"> Вкусный ананасовый смузи.</div>
+                                    <div class="content-item__text">КБЖУ: 240, 0, 10, 56</div>
+                                </div>
+                            </div>
+                            <div class="content__item item-add"></div>
+                        </div>
+                    </div>
+                </div>
+                
+			</main>
+			<footer class="footer">
+	<div class="footer__container _container">
+		<div class="footer__body">
+			<div class="footer__main">
+				<a href="" class="footer__logo">HEALTHOOD</a>
+				<div class="footer__text">доставка продуктов и рационов здорового питания</div>
+				<div class="footer__contacts contacts-footer">
+					<a href="" class="contacts-footer__item _icon-location">Челябинск</a>
+					<a href="" class="contacts-footer__item _icon-phone">+7(900) 000 00 00</a>
+					<a href="mailto:tasya.kopeysk@gmail.com" target="_blank" class="contacts-footer__item">healthood@gmail.com</a>
+				</div>
+			</div>
+			<div class="footer_menu menu-footer">
+				<div class="menu-footer__column">
+					<ul class="menu-footer__list">
+						<li><a href="" class="menu-footer__link">главная</a></li>
+						<li><a href="" class="menu-footer__link">меню</a></li>
+						<li><a href="" class="menu-footer__link">доставка</a></li>
+						<li><a href="" class="menu-footer__link">о компании</a></li>
+					</ul>
+				</div>
+				<div class="menu-footer__column">
+					<ul class="menu-footer__list">
+						<li><span class="menu-footer">мы в соцсетях:</span></li>
+						<ul class="menu-footer__icons-group">
+							<li><a href="https://www.instagram.com/tasya_kl/"  target = "_blank" class="menu-footer__icons-group__link _icon-instagram"></a></li>
+							<li><a href="https://www.vk.com/konstaya/" target = "_blank" class="menu-footer__icons-group__link _icon-vk"></a></li>
+							<li><a href="https://t.me/konstaya/" target = "_blank" class="menu-footer__icons-group__link _icon-telegram"></a></li>
+						<ul>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+		</div>
+		<div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
+		<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<!--script src="js/vendors.min.js"></script-->
+<script src="js/app.min.js"></script>
+	</body>
+</html>
